@@ -10,7 +10,7 @@ const Blogs = () => {
     <>
       <Stack className="max-w-7xl mb-10 mx-auto flex flex-col items-center justify-center gap-3">
         <Typography className="!text-4xl text-amber-400 !font-bold">
-          Blog`&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`s
+          Blog&apos;s
         </Typography>
         <Stack className="w-[200px] h-0.3 border mb-10 border-amber-400"></Stack>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
