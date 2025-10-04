@@ -79,7 +79,7 @@ const TestimonialComponent = () => {
     <>
       <Stack className="mt-10 mx-auto w-full h-[500px] flex flex-col gap-4 items-center justify-center">
         <Stack className="text-4xl text-amber-400 font-bold">
-          Testimonial`&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`s
+          Testimonial&apos;s
         </Stack>
         <Stack className="w-[300px] h-0.3 border border-amber-400"></Stack>
         <div
