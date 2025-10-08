@@ -1,6 +1,8 @@
 import { Stack, Typography } from "@mui/material";
 import React from "react";
+import truckVehicle1 from "../../public/loadingTruck1.jpg";
 import truckVehicle2 from "../../public/truck2.jpg";
+import truckVehicle3 from "../../public/loadingTruck2.jpg";
 import MilkBackground from "../../public/milkBackground.png";
 import Image from "next/image";
 
@@ -55,7 +57,7 @@ const ServicesComponent = () => {
         <Stack className="flex flex-col items-center gap-4 text-center w-full h-auto p-4">
           <Stack className="w-32 h-32 md:w-40 md:h-40 flex items-center justify-center bg-slate-100 rounded-full overflow-hidden">
             <Image
-              src={truckVehicle2}
+              src={truckVehicle1}
               alt="truck"
               className="object-cover"
               width={200}
@@ -78,7 +80,7 @@ const ServicesComponent = () => {
         <Stack className="flex flex-col items-center gap-4 text-center w-full h-auto p-4">
           <Stack className="w-32 h-32 md:w-40 md:h-40 flex items-center justify-center bg-slate-100 rounded-full overflow-hidden">
             <Image
-              src={truckVehicle2}
+              src={truckVehicle3}
               alt="truck"
               className="object-cover"
               width={200}

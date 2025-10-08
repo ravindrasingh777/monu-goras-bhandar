@@ -33,11 +33,21 @@ export default function Footer() {
           <div>
             <h3 className="text-yellow-500 font-semibold mb-3">Our Products</h3>
             <ul className="space-y-2">
-              <li>Bilona Ghee</li>
-              <li>Cow Ghee</li>
-              <li>Milk</li>
-              <li>Chach</li>
-              <li>Shrikhand</li>
+              <Link href="/our-products">
+                <li>Bilona Ghee</li>
+              </Link>
+              <Link href="/our-products">
+                <li>Cow Ghee</li>
+              </Link>
+              <Link href="/our-products">
+                <li>Milk</li>
+              </Link>
+              <Link href="/our-products">
+                <li>Chach</li>
+              </Link>
+              <Link href="/our-products">
+                <li>Shrikhand</li>
+              </Link>
             </ul>
           </div>
 
@@ -47,7 +57,7 @@ export default function Footer() {
               <Link href="/about-us">
                 <li>About Us</li>
               </Link>
-              <Link href="/about-us">
+              <Link href="/contact-us">
                 <li>Contact Us</li>
               </Link>
             </ul>
@@ -56,11 +66,21 @@ export default function Footer() {
           <div>
             <h3 className="text-yellow-500 font-semibold mb-3">Pages</h3>
             <ul className="space-y-2">
-              <li>Contact us</li>
-              <li>Blog</li>
-              <li>Gallery</li>
-              <li>FAQs</li>
-              <li>Distributor Inquiry</li>
+              <Link href="/">
+                <li>Home</li>
+              </Link>
+              <Link href="/our-products">
+                <li>Our Products</li>
+              </Link>
+              <Link href="/about-us">
+                <li>About Us</li>
+              </Link>
+              <Link href="/contact-us">
+                <li>Contact Us</li>
+              </Link>
+              <Link href="/contact-us">
+                <li>Distributor Inquiry</li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -80,12 +100,13 @@ export default function Footer() {
               </p>
               <p>
                 Email:{" "}
-                <a
-                  href="mailto:gbmansarovar@gmail.com"
+                <Link
+                  target="_blank"
+                  href="ravindrasinghrss2004@gmail.com"
                   className="text-yellow-500"
                 >
                   ravindrasinghrss2004@gmail.com
-                </a>
+                </Link>
               </p>
             </div>
           </div>

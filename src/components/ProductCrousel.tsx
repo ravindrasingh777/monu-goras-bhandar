@@ -5,23 +5,25 @@ import product2 from "../../public/2.png";
 import product3 from "../../public/3.png";
 import product5 from "../../public/5.png";
 import product6 from "../../public/7.png";
-import product11 from "../../public/2-2.png";
-import product12 from "../../public/3-3.png";
-import product13 from "../../public/5-5.png";
-import product14 from "../../public/7-7.png";
+import product11 from "../../public/2-22.png";
+import product12 from "../../public/3-33.png";
+import product13 from "../../public/5-55.png";
+// import product14 from "../../public/7-7.png";
 import product15 from "../../public/8-1.png";
 import product8 from "../../public/8-2.png";
 import product9 from "../../public/1-2.png";
 import yellowBg from "../../public/yellow_bg1.jpg";
+import bigPacketMilk from "../../public/7-71.png";
 
 import Image from "next/image";
 import { Stack } from "@mui/material";
+import Link from "next/link";
 
 const ProductCarousel = () => {
   const products = [
     {
       image: product6,
-      image2: product14,
+      image2: bigPacketMilk,
       title: "Goras Cow Milk 1kg",
       title2: "Goras Cow Milk 6kg",
     },
@@ -37,9 +39,9 @@ const ProductCarousel = () => {
       title: "Goras Bilona Ghee 1Kg",
       title2: "Goras Bilona Ghee-15Kg",
     },
-    { image: product5, image2: product13, title: "Goras Cow Milk 1/2 kg" },
-    { image: product2, image2: product11, title: "Goras Chaach 1/2 kg" },
-    { image: product3, image2: product12, title: "Goras Sri-Khand" },
+    { image: product5, title: "Goras Cow Milk 1/2 kg" },
+    { image: product2, title: "Goras Chaach 1/2 kg" },
+    { image: product3, title: "Goras Sri-Khand" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -88,21 +90,28 @@ const ProductCarousel = () => {
                   key={index}
                   className="flex-shrink-0  w-full flex flex-col items-center justify-center "
                 >
-                  <div className="flex  items-center justify-center gap-4">
-                    <Image
-                      src={product.image}
-                      alt={product.title}
-                      width={250}
-                      height={250}
-                      className="object-contain rounded-lg w-[130px] h-[130px] md:w-[250px] md:h-[250px]"
-                    />
-                    <Image
-                      src={product.image2}
-                      alt={product.title}
-                      width={250}
-                      height={250}
-                      className="object-contain rounded-lg w-[130px] h-[130px] md:w-[250px] md:h-[250px]"
-                    />
+                  <div className="flex items-center justify-center gap-4">
+                    <Link href="/our-products">
+                      {" "}
+                      <Image
+                        src={product.image}
+                        alt={product.title}
+                        width={250}
+                        height={250}
+                        className="object-contain rounded-lg w-[130px] h-[130px] md:w-[250px] md:h-[250px]"
+                      />
+                    </Link>
+                    {product.image2 && (
+                      <Link href="/our-products">
+                        <Image
+                          src={product.image2}
+                          alt={product.title}
+                          width={250}
+                          height={250}
+                          className="object-contain rounded-lg w-[130px] h-[130px] md:w-[250px] md:h-[250px]"
+                        />
+                      </Link>
+                    )}
                   </div>
                   <div className="flex gap-14">
                     <h3 className="mt-4 font-bold text-[13px] md:text-lg text-center">

@@ -34,7 +34,7 @@ export default function TemporaryDrawer() {
           </li>
           <li>
             <Link
-              href="/product"
+              href="/our-products"
               className="block px-3 py-2 rounded-lg transition-all duration-200 hover:bg-amber-100 hover:text-amber-500"
             >
               Product
@@ -58,7 +58,8 @@ export default function TemporaryDrawer() {
           </li>
           <li>
             <Link
-              href="/contact-us"
+              href="https://api.whatsapp.com/send/?phone=%2B919887700428&text&type=phone_number&app_absent=0"
+              target="_blank"
               className="block px-3 py-2 rounded-lg transition-all duration-200 text-green-500"
             >
               <WhatsAppIcon fontSize="medium" color="success" /> Connect us with
