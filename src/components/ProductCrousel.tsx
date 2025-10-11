@@ -5,11 +5,9 @@ import product2 from "../../public/2.png";
 import product3 from "../../public/3.png";
 import product5 from "../../public/5.png";
 import product6 from "../../public/7.png";
-import product11 from "../../public/2-22.png";
-import product12 from "../../public/3-33.png";
-import product13 from "../../public/5-55.png";
-// import product14 from "../../public/7-7.png";
+import product7 from "../../public/sri-KhandOpenBox.png";
 import product15 from "../../public/8-1.png";
+import product16 from "../../public/gorasRasgulla.png";
 import product8 from "../../public/8-2.png";
 import product9 from "../../public/1-2.png";
 import yellowBg from "../../public/yellow_bg1.jpg";
@@ -21,6 +19,7 @@ import Link from "next/link";
 
 const ProductCarousel = () => {
   const products = [
+    { image: product16, title: "Goras Rasgulla 1250gm" },
     {
       image: product6,
       image2: bigPacketMilk,
@@ -39,9 +38,9 @@ const ProductCarousel = () => {
       title: "Goras Bilona Ghee 1Kg",
       title2: "Goras Bilona Ghee-15Kg",
     },
+    { image: product3, image2: product7, title: "Goras Sri-Khand" },
     { image: product5, title: "Goras Cow Milk 1/2 kg" },
     { image: product2, title: "Goras Chaach 1/2 kg" },
-    { image: product3, title: "Goras Sri-Khand" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
