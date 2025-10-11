@@ -18,8 +18,7 @@ export const metadata: Metadata = {
     apple: "/favicon.ico",
   },
   verification: {
-    google:
-      "google-site-verification=F_AcaF4Vc9pSVuLJUu8t0ppmAZGKBpSjInxSLu6sL3Y",
+    google: "F_AcaF4Vc9pSVuLJUu8t0ppmAZGKBpSjInxSLu6sL3Y",
   },
 };
 
@@ -29,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${poppins.variable}`}>
+    <html lang="en" suppressHydrationWarning className={poppins.variable}>
       <body className="antialiased">{children}</body>
-    </html>
-  );
+    </html>
+  );
 }
