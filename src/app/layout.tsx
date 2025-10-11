@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     apple: "/favicon.ico",
   },
   verification: {
-    google: "F_AcaF4Vc9pSVuLJUu8t0ppmAZGKBpSjInxSLu6sL3Y",
+    google:
+      "google-site-verification=F_AcaF4Vc9pSVuLJUu8t0ppmAZGKBpSjInxSLu6sL3Y",
   },
 };
 
