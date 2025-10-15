@@ -25,8 +25,8 @@ const Page = () => {
         <TestimonialComponent />
         <Blogs />
         <ContactUs />
-        <Footer />
       </Stack>
+      <Footer />
     </>
   );
 };
