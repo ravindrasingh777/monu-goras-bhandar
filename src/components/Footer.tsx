@@ -8,7 +8,7 @@ import logo from "../../public/favicon.ico";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1c1818] mt-10 text-gray-300">
+    <footer className="bg-[#1c1818] w-full mt-10 text-gray-300">
       {/* Top Section */}
       <div className="max-w-6xl mx-auto px-4 py-10">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between border-b border-gray-700 pb-6">
@@ -22,7 +22,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-10">
+        <div className="grid grid-cols-2  md:grid-cols-4 gap-8 py-10">
           <div>
             <h3 className="text-yellow-500 font-semibold mb-3">Categories</h3>
             <ul className="space-y-2">

@@ -1,14 +1,15 @@
+import AboutOurCompany from "@/components/AboutOurCompany";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Products from "@/components/Products";
-import { Stack } from "@mui/material";
+import Team from "@/components/Team";
 import React from "react";
 
 const Page = () => {
   return (
     <>
       <Header />
-      <Products />
+      <AboutOurCompany />
+      <Team />
       <Footer />
     </>
   );

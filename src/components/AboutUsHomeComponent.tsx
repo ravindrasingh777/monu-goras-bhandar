@@ -2,6 +2,7 @@ import { Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import ourStoryBanner from "../../public/ourStoryPic.png";
+import Link from "next/link";
 
 const AboutUsHomeComponent = () => {
   return (
@@ -41,9 +42,11 @@ const AboutUsHomeComponent = () => {
               Ghee, Desi Cow Ghee, Lassi and Chaach, Pasteurized Milk, Shrikhand
               and more…
             </Typography>
-            <button className="py-2 px-4 text-black border border-black rounded-md hover:bg-black hover:text-white transition">
-              Read More
-            </button>
+            <Link href="/about-us">
+              <button className="py-2 px-4 cursor-pointer text-black border border-black rounded-md hover:bg-black hover:text-white transition">
+                Read More
+              </button>
+            </Link>
           </Stack>
         </div>
       </div>

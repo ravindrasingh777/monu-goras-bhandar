@@ -1,3 +1,4 @@
+"use client";
 import { Stack, Typography } from "@mui/material";
 import React from "react";
 import product1 from "../../public/1.png";
@@ -12,9 +13,10 @@ import product9 from "../../public/1-2.png";
 import bigPacketMilk from "../../public/7-71.png";
 import MilkBackground from "../../public/milkBackground.png";
 import Image from "next/image";
-import Link from "next/link";
+import AlertDialogSlide from "./Dialog";
 
 const Products = () => {
+  const [open, setOpen] = React.useState(false);
   const GorasProducts = [
     {
       title: "Goras Ghee 1kg",
@@ -79,6 +81,7 @@ const Products = () => {
   ];
   return (
     <>
+      <AlertDialogSlide open={open} setOpen={setOpen} />
       <Stack
         style={{
           backgroundImage: `url(${MilkBackground.src})`,
@@ -86,7 +89,7 @@ const Products = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
-        className="w-full"
+        className="w-full mt-3"
       >
         <Stack
           className="max-w-6xl mx-auto"
@@ -112,7 +115,13 @@ const Products = () => {
                       alt={product.title}
                       src={product.image}
                     />
-                    <Stack direction="column" gap={1} className="mt-5">
+                    <Stack
+                      direction="column"
+                      alignItems="center"
+                      justifyItems="center"
+                      gap={1}
+                      className="mt-5"
+                    >
                       <Typography className="!text-center text-gray-700 !font-bold text-sm md:!text-xl">
                         {product.title}
                       </Typography>
@@ -122,11 +131,12 @@ const Products = () => {
                       <Typography className="!text-center font-bold text-green-600">
                         Price:- <strong>{product.price}</strong>
                       </Typography>
-                      <Link href="/contact-us">
-                        <button className="cursor-pointer text-amber-400 hover:bg-amber-400 rounded-md hover:text-white font-bold border border-amber-400 px-3 py-2">
-                          Book Order
-                        </button>
-                      </Link>
+                      <button
+                        onClick={() => setOpen(true)}
+                        className="cursor-pointer text-amber-400 hover:bg-amber-400 rounded-md hover:text-white font-bold border border-amber-400 px-3 py-2"
+                      >
+                        Book Order
+                      </button>
                     </Stack>
                   </div>
                 );

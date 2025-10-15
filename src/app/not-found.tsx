@@ -9,7 +9,6 @@ const NotFound = () => {
     <>
       <Image src={MonuGorasBhandar} width={500} height={500} alt="stay-tuned" />
       <Link href="/">
-        {" "}
         <Button variant="outlined" color="primary">
           Back
         </Button>
