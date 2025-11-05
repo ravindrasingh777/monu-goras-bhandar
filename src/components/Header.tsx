@@ -17,7 +17,7 @@ const Header = () => {
         direction="row"
         alignItems="center"
         justifyContent="space-between"
-        className="w-full !sticky !top-0 !z-10 bg-white py-2 px-3"
+        className="w-full !sticky !top-0 !z-10 bg-white dark:bg-[#ededed] py-2 px-3"
       >
         <Stack
           direction="row"
