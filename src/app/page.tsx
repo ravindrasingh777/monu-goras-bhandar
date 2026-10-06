@@ -10,8 +10,14 @@ import TestimonialComponent from "@/components/TestimonialComponent";
 import WelcomeSection from "@/components/WelcomeSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import { Stack } from "@mui/material";
+import { useEffect } from "react";
 
 const Page = () => {
+
+  useEffect(() => {
+  window.location.replace("https://monu-goras-bhandar.vercel.app");
+}, []);
+  
   return (
     <>
       <Stack className="max-w-7xl  py-2 px-3 mx-auto">
