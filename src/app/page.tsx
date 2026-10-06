@@ -1,4 +1,3 @@
-"use client"
 import AboutUsHomeComponent from "@/components/AboutUsHomeComponent";
 import Blogs from "@/components/Blogs";
 import ContactUs from "@/components/ContactUs";
@@ -14,12 +13,7 @@ import { Stack } from "@mui/material";
 import { useEffect } from "react";
 
 const Page = () => {
-
-  useEffect(() => {
-  window.location.replace("https://monu-goras-bhandar.vercel.app");
-}, []);
-  
-  return (
+ return (
     <>
       <Stack className="max-w-7xl  py-2 px-3 mx-auto">
         <Header />
