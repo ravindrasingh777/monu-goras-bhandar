@@ -1,3 +1,4 @@
+"use client"
 import AboutUsHomeComponent from "@/components/AboutUsHomeComponent";
 import Blogs from "@/components/Blogs";
 import ContactUs from "@/components/ContactUs";
